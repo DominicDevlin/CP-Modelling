@@ -1,0 +1,541 @@
+==30196== Memcheck, a memory error detector
+==30196== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30196== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==30196== Command: ./sorting
+==30196== Parent PID: 7801
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113AC5: Cell::AddSiteToMoments(int, int, double) (cell.h:364)
+==30196==    by 0x111277: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:974)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113AC5: Cell::AddSiteToMoments(int, int, double) (cell.h:364)
+==30196==    by 0x111277: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:974)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10E3A3: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:418)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10E3AF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:422)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111E1E: CellularPotts::ConnectivityPreservedP(int, int) (ca.cpp:1172)
+==30196==    by 0x10E3CF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:427)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D465: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:233)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173CD: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173FC: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173C6: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173CD: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173E9: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D5D2: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:251)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D966: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:285)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111EE2: CellularPotts::ConnectivityPreservedP(int, int) (ca.cpp:1185)
+==30196==    by 0x10E3CF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:427)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111EEA: CellularPotts::ConnectivityPreservedP(int, int) (ca.cpp:1185)
+==30196==    by 0x10E3CF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:427)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111F00: CellularPotts::ConnectivityPreservedP(int, int) (ca.cpp:1197)
+==30196==    by 0x10E3CF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:427)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111EF2: CellularPotts::ConnectivityPreservedP(int, int) (ca.cpp:1185)
+==30196==    by 0x10E3CF: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:427)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173C6: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173FC: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173E9: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D542: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:247)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D805: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:279)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DE20: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:315)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DF36: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:325)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x110151: CellularPotts::FindCellDirections() const (ca.cpp:802)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x110F7D: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:912)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x1173D2: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x1173D2: Cell::EnergyDifference(Cell const&) const (cell.cpp:184)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x117408: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x117408: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173F5: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D4DE: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:238)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D9E2: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:286)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113E85: Cell::GetNewLengthIfXYWereAdded(int, int) (cell.h:428)
+==30196==    by 0x10DA33: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:287)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113E85: Cell::GetNewLengthIfXYWereAdded(int, int) (cell.h:428)
+==30196==    by 0x10DA33: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:287)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DA89: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:287)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10E008: CellularPotts::CopyvProb(int, double) (ca.cpp:342)
+==30196==    by 0x10E42C: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:432)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10E021: CellularPotts::CopyvProb(int, double) (ca.cpp:345)
+==30196==    by 0x10E42C: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:432)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x10E07A: CellularPotts::CopyvProb(int, double) (ca.cpp:348)
+==30196==    by 0x10E42C: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:432)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x1173F5: Cell::EnergyDifference(Cell const&) const (cell.cpp:187)
+==30196==    by 0x10D520: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:239)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DC80: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:294)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113F43: Cell::GetNewLengthIfXYWereRemoved(int, int) (cell.h:438)
+==30196==    by 0x10DCD1: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:295)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113F43: Cell::GetNewLengthIfXYWereRemoved(int, int) (cell.h:438)
+==30196==    by 0x10DCD1: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:295)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DD27: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:295)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DB39: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:292)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113E85: Cell::GetNewLengthIfXYWereAdded(int, int) (cell.h:428)
+==30196==    by 0x10DB8A: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:293)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113E85: Cell::GetNewLengthIfXYWereAdded(int, int) (cell.h:428)
+==30196==    by 0x10DB8A: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:293)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DBE0: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:293)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D881: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:280)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113F43: Cell::GetNewLengthIfXYWereRemoved(int, int) (cell.h:438)
+==30196==    by 0x10D8D2: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:281)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113F43: Cell::GetNewLengthIfXYWereRemoved(int, int) (cell.h:438)
+==30196==    by 0x10D8D2: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:281)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10D928: CellularPotts::DeltaH(int, int, int, int, PDE*) (ca.cpp:281)
+==30196==    by 0x10E405: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:431)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113AC5: Cell::AddSiteToMoments(int, int, double) (cell.h:364)
+==30196==    by 0x10DF8D: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:327)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113AC5: Cell::AddSiteToMoments(int, int, double) (cell.h:364)
+==30196==    by 0x10DF8D: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:327)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113D80: Cell::Length(long, long, long, long, long, long) (cell.h:405)
+==30196==    by 0x113C1B: Cell::RemoveSiteFromMoments(int, int, double) (cell.h:388)
+==30196==    by 0x10DE7B: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:317)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x487C82C: sqrt (w_sqrt_compat.c:35)
+==30196==    by 0x113DCC: Cell::Length(long, long, long, long, long, long) (cell.h:417)
+==30196==    by 0x113C1B: Cell::RemoveSiteFromMoments(int, int, double) (cell.h:388)
+==30196==    by 0x10DE7B: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:317)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x10DEA4: CellularPotts::ConvertSpin(int, int, int, int) (ca.cpp:319)
+==30196==    by 0x10E455: CellularPotts::AmoebaeMove(PDE*) (ca.cpp:433)
+==30196==    by 0x11F7C6: main (sorting.cpp:132)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x113135: std::_Bit_iterator_base::_M_incr(long) (stl_bvector.h:177)
+==30196==    by 0x1132AE: std::_Bit_iterator::operator+=(long) (stl_bvector.h:287)
+==30196==    by 0x11335E: std::operator+(std::_Bit_iterator const&, long) (stl_bvector.h:306)
+==30196==    by 0x1132EB: std::_Bit_iterator::operator[](long) const (stl_bvector.h:300)
+==30196==    by 0x114560: std::vector<bool, std::allocator<bool> >::operator[](unsigned long) (stl_bvector.h:907)
+==30196==    by 0x110FEB: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:926)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Use of uninitialised value of size 8
+==30196==    at 0x112FDD: std::_Bit_reference::operator bool() const (stl_bvector.h:87)
+==30196==    by 0x110FFF: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:926)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Conditional jump or move depends on uninitialised value(s)
+==30196==    at 0x111002: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:926)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x110294: CellularPotts::FindCellDirections() const (ca.cpp:811)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5470d28 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FE4F: CellularPotts::FindCellDirections() const (ca.cpp:761)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x1102E7: CellularPotts::FindCellDirections() const (ca.cpp:811)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5470d28 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FE4F: CellularPotts::FindCellDirections() const (ca.cpp:761)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x11032D: CellularPotts::FindCellDirections() const (ca.cpp:812)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5470f08 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FE88: CellularPotts::FindCellDirections() const (ca.cpp:764)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x110383: CellularPotts::FindCellDirections() const (ca.cpp:812)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5470f08 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FE88: CellularPotts::FindCellDirections() const (ca.cpp:764)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x1103C9: CellularPotts::FindCellDirections() const (ca.cpp:814)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54710e8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FEC7: CellularPotts::FindCellDirections() const (ca.cpp:767)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x11042F: CellularPotts::FindCellDirections() const (ca.cpp:814)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54710e8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FEC7: CellularPotts::FindCellDirections() const (ca.cpp:767)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x110475: CellularPotts::FindCellDirections() const (ca.cpp:815)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54712c8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF06: CellularPotts::FindCellDirections() const (ca.cpp:770)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x1104DB: CellularPotts::FindCellDirections() const (ca.cpp:815)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54712c8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF06: CellularPotts::FindCellDirections() const (ca.cpp:770)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x11051E: CellularPotts::FindCellDirections() const (ca.cpp:816)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54714a8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF42: CellularPotts::FindCellDirections() const (ca.cpp:773)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x110581: CellularPotts::FindCellDirections() const (ca.cpp:816)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x54714a8 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF42: CellularPotts::FindCellDirections() const (ca.cpp:773)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid read of size 8
+==30196==    at 0x1105C4: CellularPotts::FindCellDirections() const (ca.cpp:818)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5471688 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF78: CellularPotts::FindCellDirections() const (ca.cpp:776)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== Invalid write of size 8
+==30196==    at 0x1105D4: CellularPotts::FindCellDirections() const (ca.cpp:818)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  Address 0x5471688 is 0 bytes after a block of size 408 alloc'd
+==30196==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==30196==    by 0x10FF78: CellularPotts::FindCellDirections() const (ca.cpp:776)
+==30196==    by 0x11117F: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:964)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196== 
+==30196== 
+==30196== More than 10000000 total errors detected.  I'm not reporting any more.
+==30196== Final error counts will be inaccurate.  Go fix your program!
+==30196== Rerun with --error-limit=no to disable this cutoff.  Note
+==30196== that errors may occur in your program without prior warning from
+==30196== Valgrind, because errors are no longer being displayed.
+==30196== 
+==30196== 
+==30196== Process terminating with default action of signal 11 (SIGSEGV)
+==30196==  Access not within mapped region at address 0xCBAB7D8
+==30196==    at 0x112FDD: std::_Bit_reference::operator bool() const (stl_bvector.h:87)
+==30196==    by 0x110FFF: CellularPotts::DivideCells(std::vector<bool, std::allocator<bool> >) (ca.cpp:926)
+==30196==    by 0x118F0F: Dish::CellGrowthAndDivision() (dish.cpp:144)
+==30196==    by 0x11F81E: main (sorting.cpp:134)
+==30196==  If you believe this happened as a result of a stack
+==30196==  overflow in your program's main thread (unlikely but
+==30196==  possible), you can try to increase the size of the
+==30196==  main thread stack using the --main-stacksize= flag.
+==30196==  The main thread stack size used in this run was 8388608.
+==30196== 
+==30196== HEAP SUMMARY:
+==30196==     in use at exit: 3,554,228 bytes in 1,640 blocks
+==30196==   total heap usage: 23,793 allocs, 22,153 frees, 4,414,128 bytes allocated
+==30196== 
+==30196== LEAK SUMMARY:
+==30196==    definitely lost: 970,736 bytes in 1,339 blocks
+==30196==    indirectly lost: 24 bytes in 3 blocks
+==30196==      possibly lost: 0 bytes in 0 blocks
+==30196==    still reachable: 2,583,468 bytes in 298 blocks
+==30196==         suppressed: 0 bytes in 0 blocks
+==30196== Rerun with --leak-check=full to see details of leaked memory
+==30196== 
+==30196== Use --track-origins=yes to see where uninitialised values come from
+==30196== For lists of detected and suppressed errors, rerun with: -s
+==30196== ERROR SUMMARY: 10000000 errors from 71 contexts (suppressed: 0 from 0)
