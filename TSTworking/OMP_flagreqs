@@ -1,4 +1,0 @@
-CFLAGS -fopenmp
-CXXFLAGS -fopenmp
-LINK -fopenmp
-LFLAGS -fopenmp
